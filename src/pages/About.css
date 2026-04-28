@@ -1,0 +1,130 @@
+.about-hero {
+  background: var(--primary);
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 120px 0 80px;
+}
+
+.about-hero h1.white {
+  color: var(--white);
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.white-fade {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.25rem;
+}
+
+.about-story {
+  background-size: repeat;
+  background-position: center;
+  /* Soften the pattern */
+  background-color: rgba(255, 255, 255, 0.96);
+  background-blend-mode: overlay;
+}
+
+.legible-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid rgba(11, 31, 58, 0.05);
+  margin-bottom: 30px;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.rounded {
+  border-radius: var(--radius);
+}
+
+.story-content h2 {
+  margin-bottom: 25px;
+}
+
+.story-content p {
+  margin-bottom: 20px;
+  color: var(--text-gray);
+}
+
+.story-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-gray);
+  margin-bottom: 20px;
+}
+
+.mv-item.card {
+  padding: 30px;
+  border-radius: 20px;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(11, 31, 58, 0.05);
+}
+
+.mission-vision {
+  margin-top: 40px;
+  gap: 30px;
+}
+
+.mv-icon {
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.value-card {
+  padding: 50px 30px;
+  text-align: center;
+  background: var(--white);
+  border-radius: 30px;
+  transition: var(--transition);
+}
+
+.value-card h4 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  color: var(--primary);
+}
+
+.value-icon {
+  color: var(--accent);
+  margin: 0 auto;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+@media (max-width: 992px) {
+  .story-grid, .values-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

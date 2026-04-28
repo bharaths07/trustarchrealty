@@ -1,0 +1,47 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #e2e8f0;
+}
+
+.accent-card {
+  border-top: 4px solid var(--accent);
+}
+
+.service-icon {
+  margin-bottom: 25px;
+  color: var(--accent);
+  background: var(--white);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+.service-desc {
+  margin-bottom: 25px;
+  color: var(--text-gray);
+  font-size: 16px;
+}
+
+.service-features {
+  margin-top: auto;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.service-features li svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
